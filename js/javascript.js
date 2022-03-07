@@ -4,7 +4,7 @@ let messageArea = document.querySelector('.scrol'),
     className;
 
 
- let messags = ['Assalomu alekum', 'Valekum salom','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.'];
+ let messags = ['Assalomu alekum', 'Valekum salom'];
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
@@ -20,8 +20,7 @@ form.addEventListener('submit', (e) =>{
 
 function addNewMessage(dataBase, text) {
     text.innerHTML = '';
-    //  dataBase.reverse();
-     console.log(dataBase);
+    
     dataBase.forEach((element, i) => {
         if(i%2 == 0){
             className = 'left';
