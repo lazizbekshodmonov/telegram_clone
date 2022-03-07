@@ -4,15 +4,16 @@ let messageArea = document.querySelector('.scrol'),
     className;
 
 
- let messags = ['Assalomu alekum', 'Valekum salom'];
+ let messages = ['Assalomu alekum', 'Valekum salom'];
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     let text = message.value;
     
     if(text){
-    messags.push(text);
-    addNewMessage(messags, messageArea);
+    messages.push(text);
+    messages.reverse();
+    addNewMessage(messages, messageArea);
     }
     message.value = '';
 });
@@ -36,4 +37,4 @@ function addNewMessage(dataBase, text) {
         `;
     });
 }
-addNewMessage(messags, messageArea);
+addNewMessage(messages, messageArea);
