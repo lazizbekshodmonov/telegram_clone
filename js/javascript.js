@@ -1,3 +1,5 @@
+'use strict';
+
 let messageArea = document.querySelector('.scrol'),
     form = document.querySelector('.form'),
     message = document.querySelector('#message'),
@@ -5,6 +7,7 @@ let messageArea = document.querySelector('.scrol'),
 
 
  let messages = ['Assalomu alekum', 'Valekum salom'];
+
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
@@ -23,11 +26,7 @@ function addNewMessage(dataBase, text) {
     text.innerHTML = '';
     
     dataBase.forEach((element, i) => {
-        if(i%2 == 0){
-            className = 'left';
-        }else{
-            className = 'right';
-        }
+        
         text.innerHTML += `
             <div class="message ${className}">
                 <div class="message-bg">     
