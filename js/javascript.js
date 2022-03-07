@@ -4,17 +4,17 @@ let messageArea = document.querySelector('.scrol'),
     className;
 
 
- let messags = ['Assalomu alekum', 'Valekum salom'];
+ let messags = ['Assalomu alekum', 'Valekum salom','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nihil. Ullam quos rem ea at, dolores enim culpa, nihil dolorem vitae voluptate asperiores quidem iure ex, harum porro odit sit.'];
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     let text = message.value;
     
-    
+    if(text){
     messags.push(text);
-    
     addNewMessage(messags, messageArea);
-    
+    }
+    message.value = '';
 });
 
 
