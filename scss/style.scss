@@ -3,135 +3,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url(../fonts/Poppins_woff/stylesheet.css);
+@import url(../fonts/Roboto_woff/stylesheet.css);
+
+// varibels
+
+$color-6588DE: #6588DE;
+$color-E3F6FC: #E3F6FC;
+$color-F2F6F7: #F2F6F7;
+$color-F3BA4A: #F3BA4A;
+
 .container{
-    position: relative;
-    width: 700px;
-    height: 900px;
-    margin: 20px auto;
-    background-color: aqua;
-    border: 1px #000 solid;
-    .user{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        height: 55px;
-        padding: 5px 10px;
-        background-color: #fff;
-        .user-logo{
-            width: 40px;
-            height: 40px;
-        }
-        .user-info{
-            margin-left: 20px;
-            .user-name{
-                margin: 0;
-                margin-top: 3px;
-                font-family: Arial, Helvetica, sans-serif;
-                color: rgb(7, 6, 6);
-            }
-            .user-activity{
-                margin: 0;
-                color: blue;
-                font-family: sans-serif;
-            }
-        }
-        .additional-icons{
-            width: 80%;
+    width: 100%;
+    height: 100%;
+    .menu-users{
+        width: 350px;
+        height: 100%;
+        position: relative;
+        .my-user{
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            form{
-                input{
-                    width: 30px;
-                    height: 30px;
+            width: 100%;
+            height: 7%;
+            background-color: $color-E3F6FC;
+            padding: 30px 20px;
+            padding-left: 30px;
+            border-radius: 0px 0px 14px 14px;
+            margin-bottom: 10px;
+            .user-logo{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 2px solid $color-F3BA4A;
+                img{
+                    width: 45px;
                 }
             }
-        }
-    }
-    .message-area{
-        width: 100%;
-        height: 89.5%;
-        background-image: url(../img/photo-1537732248017-ecb90efd67f4.jfif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow-y: scroll;
-        &::-webkit-scrollbar{
-            display: none;
-        }
-        .scrol{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap-reverse;
-            align-content: flex-start;
-            padding: 10px;
-            width: 100%;
-            min-height: 100%;
-            
-            .message{
-                display: flex;
-                width: 100%;
-                margin-bottom: 10px;
-                .message-bg{
-                    display: inline-block;
-                    max-width: 400px;
-                    padding: 5px 7px;
-                    background-color: rgb(8, 108, 155);
-                    border-radius: 5px;
-                    .message-text{
-                        font-family: sans-serif;
-                        font-size: 20px;
-                        color: #fff;
+            .user-info{
+                margin-left: 20px;
+                .user-name{
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+                .user-status{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 88px;
+                    height: 20px;
+                    background-color: $color-6588DE;
+                    border-radius: 50px;
+                    .activity-icon{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: $color-F3BA4A;
+                    }
+                    .activity-name{
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 16px;
+                        color: $color-F2F6F7;
+                    }
+                    .icon-droop{
+                        font-size: 8px;
+                        color: $color-F2F6F7;
                     }
                 }
             }
-            .left{
-                justify-content: flex-start;
-                .message-bg{
-                    background-color: rgb(23, 68, 88); 
+            .menu{
+                position: absolute;
+                right: 20px;
+                top: 33px;
+                .icon-menu{
+                    color: $color-6588DE;
                 }
             }
-            .right{
-                justify-content: flex-end;
-                
-            }
-        }
-    }
-    .message-send{
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-        padding: 5px 10px;
-        padding-right: 5px;
-        background-color: #fff;
-        .send-icon{
-            width: 20px;
-            height: 20px;
-        }
-        form{
-            display: flex;
-            align-items: center;
-            width: 93%;
-            input{
-                width: 92%;
-                height: 30px;
-                font-size: 18px;
-                font-family: sans-serif;
-                border: none;
-                outline: none;
-            }
-            .submit{
-                background-color: inherit;
-                border: none;
-                padding-left: 5px;
-                padding-top: 4px;
-                img{
-                    width: 30px;
-                }
-            }
+            
         }
     }
 }
